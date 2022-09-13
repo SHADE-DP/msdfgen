@@ -5,8 +5,8 @@ project "freetype"
     staticruntime "on"
 	warnings "Off"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir (outputdir)
+	objdir (interdir)
 
 	files
 	{
