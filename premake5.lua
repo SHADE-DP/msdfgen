@@ -2,7 +2,7 @@ project "freetype"
 	location "freetype"
 	kind "StaticLib"
 	language "C"
-    staticruntime "on"
+    staticruntime "off"
 	warnings "Off"
 
 	targetdir (outputdir)
@@ -87,7 +87,7 @@ project "msdfgen"
 	kind "StaticLib"
 	language "C++"
 	cppdialect "C++17"
-    staticruntime "on"
+    staticruntime "off"
 	warnings "Off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
